@@ -9,3 +9,11 @@ def members(request):
     'myapp': myapps,
   }
   return HttpResponse(template.render(context, request))
+
+def details(request, id):
+  mymember = myapp.objects.get(id=id)
+  template = loader.get_template('details.html')
+  context = {
+    'myapp': mymember,
+  }
+  return HttpResponse(template.render(context, request))
