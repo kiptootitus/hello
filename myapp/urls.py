@@ -5,4 +5,6 @@ urlpatterns = [
     path('', views.main, name='main'),
     path('myapp/', views.members, name='myapp'),
     path('myapp/details/<int:id>/', views.details, name='details'),
+    path('testing/', views.testing, name='testing'),    
+
 ]
