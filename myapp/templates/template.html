@@ -4,11 +4,16 @@
 
   <p>Below are the members in my database</p>
 
-<ul>
   {% for x in myapp %}
-    <li>{{ x.firstname }}</li>
-  {% endfor %}
-</ul>
+  <ul>
+    <li>
+    {{ x.firstname }}
+    {{ x.lastname }}<br>
+    {{ x.phone }}<br>
+    {{ x.joined_date }}
+    </li>
+  </ul>
+{% endfor %} 
 
 
 
