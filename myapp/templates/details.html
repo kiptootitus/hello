@@ -4,12 +4,10 @@
   Details about {{ myapp.firstname }} {{ myapp.lastname }}
 {% endblock %}
 
-
 {% block content %}
-  <h1>{{ myapp.firstname }} {{ myapp.lastname }}</h1>
-  
-  <p>Phone {{ myapp.phone }}</p>
-  <p>Member since: {{ myapp.joined_date }}</p>
-  
-  <p>Back to <a href="/myapp">Members</a></p>
-  {% endblock %}
+  <div class="mycard">
+    <h1>{{ myapp.firstname }} {{ myapp.lastname }}</h1>
+    <p>Phone {{ myapp.phone }}</p>
+    <p>Member since: {{ myapp.joined_date }}</p>
+  </div>
+{% endblock %} 
